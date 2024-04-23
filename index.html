@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background: #f1f5f8;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+    section {
+        padding-bottom: 40px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    hr {
+        width: 15vw;
+        height: 5px;
+        border: none;
+        margin: auto;
+        background-color: rgb(73, 109, 228);
+    }
+    article {
+        width: 60vw;
+        height: 100%;
+        padding: 20px 25px;
+        background: rgb(255, 255, 255);;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 5px #c0bcbc;
+    }
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+    .container-arrows-btn {
+        padding: 6px 0 10px;
+    }
+    .container-arrows-btn button {
+        background: transparent;
+        border: transparent;
+    }
+    .prev-btn, .next-btn {
+        cursor: pointer;
+        border-radius: unset;
+        padding: 2px;
+    }
+    .prev-btn:hover {
+        background: rgb(185, 220, 224);
+    }
+    .next-btn:hover {
+        background: rgb(185, 220, 224);
+    }
+    button img {
+        width: 20px;
+        height: 20px;
+    }
+    #decription-person{
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+    #job-title {
+        color: #7b92cc;
+        font-weight: bold;
+    }
+    .name-job {
+        padding: 10px 0;
+        line-height: 20px;
+    }
+    button, .btn-surprise {
+        font-size: 18px;
+        border-radius: 20px;
+        background: transparent;
+    }
+    .btn-surprise {
+        padding: 5px 20px;
+    }
+    .btn-surprise:hover {
+        background: rgb(201, 231, 200);
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <div class="title">
+            <h1>Our Reviews</h1>
+            <hr>
+        </div>
+        </section>
+        <article>
+            <div>
+                <img id="img-person" src="img/lady-escabia.jpg" alt="Person">
+            </div>
+            <div class="name-job">
+            <h4 id="name-person">Juancho Vidal</h4>
+            <p id="job-title">Devops</p>
+            </div>
+            <p id="decription-person">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quis odit voluptates culpa voluptas alias rerum vel id magni fugit rem temporibus, quam exercitationem hic aut doloremque nam laborum assumenda.</p>
+            <div class="container-arrows-btn">
+                <button class="prev-btn">
+                    <img src="img/left-arrow.png" alt="left arrow">
+                </button>
+                <button class="next-btn">
+                    <img src="img/right-arrow.png" alt="right-arrow">
+                </button>
+            </div>
+            <button class="btn-surprise">Surprise Me</button>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
